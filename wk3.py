@@ -18,7 +18,7 @@
 # print(my_list) # Prints: [1, 2, 3, 4, 5, 6, 7, 8]
 
 
-# name = "Hello " # Set name variable to an string 'hello '
+# name = "Hello " # Set name variable to an string 'hello ' space here also for joining to world
 
 # name = name + "World!" # Take the current name value and add 'world' to it
 
@@ -30,7 +30,18 @@
 # name = "John" # Initialize name variable to John
 # my_list = my_list + name # Adding the current my_list variable to the string name
 # print(my_list) # Prints: ['j','o','h','n']
-#this will not work on new vervion??
+# #this will not work on new vervion of python - worked on earlier versions??
+# #dont worry about this too much
+
+# print(5-3)
+# subvalue=5-8
+# print (subvalue -6)
+
+
+
+
+# mul=5*6
+# print(mul*8)
 
 
 
@@ -41,30 +52,57 @@
 # print(my_list) # Prints: [1,2,3,4,1,2,3,4,1,2,3,4]
 
 
-# print(5 // 3) # Prints: 1
+
+
+# # floating point division
+# print (5/2)
+# value=5/4
+# print(value)
+# print (value/3)
+
+
+# #intiger division
+# print(5 // 3) # Prints: 1 - if answer is a float then it takes floor of division - rounds down - even if over 0.5
+# divvalue = 10//6
+# print (divvalue/5)
+# print (divvalue//5)
 
 
 
+
+# #Shortcuts
 
 # variable_1 = 5 # Initialize the variable to 5
-
-# variable_1 = variable_1 + 5 # Take the current value of the variable and add 5
-# variable_1 += 5 # me: shortcut - same as above - works with /= aswell etc
+# # variable_1 = variable_1 + 5 # Take the current value of the variable and add 5
+# variable_1 += 5 #shortcut - same as above - works with /= aswell etc
 # print(variable_1)
 
+# variable_1 = 5 # Initialize the variable to 5
+# #variable_1 = variable_1 - 5 # Take the current value of the variable and subtract 5
+# variable_1 -= 5
+# print(variable_1)
 
-# variable_1 = variable_1 - 5 # Take the current value of the variable and subtract 5
+# variable_1 = 5 # Initialize the variable to 5
+# #variable_1 = variable_1 / 2 # Take the current value of the variable and floating point divide by 2
+# variable_1 /= 5
+# print(variable_1)
 
-# variable_1 = variable_1 / 2 # Take the current value of the variable and floating point divide by 2
-
-# variable_1 = variable_1 // 2 # Take the current value of the variable and intege
-# variable_1 //=2
+# variable_1 = 5 # Initialize the variable to 5
+# #variable_1 = variable_1 // 2 # Take the current value of the variable and intege
+# variable_1 //= 2
 # print (variable_1)
 
 
 
+
+
 # print (5//3)
-# print(5 % 3) # Prints: 2
+# print(5 % 3) # Prints: 2 - Modulus - prints the remainder - eg if you wanted to see if a number is divisible
+# # can use variables too etc
+
+
+
+
 
 
 # print(5 > 3) # Prints: True; since 5 is greater than 3
@@ -75,8 +113,9 @@
 
 # print(3 > 5) # Prints: False; since 3 is NOT greater than 5
 
-# print(5 >= 5) # Prints: False; since 5 is NOT greater than 5 (they are equal)
+# print(5 > 5) # Prints: False; since 5 is NOT greater than 5 (they are equal)
 
+# print(5>=5)
 
 
 # print(5 >= 3) # Prints: True; since 5 is greater than 3
@@ -101,9 +140,9 @@
 
 # print(not 3 < 5) # Prints: False; Since the statement 3 < 5 evaluates to True
 
-# print(5 < 3 and 8 > 6) # Prints: True; since both statements evaluate to True
+# print(5 > 3 and 8 > 6) # Prints: True; since both statements evaluate to True
 
-# print(5 > 3 and 8 > 6) # Prints: False; since the first statement evaluates to F
+# print(5 < 3 and 8 > 6) # Prints: False; since the first statement evaluates to F
 
 
 
@@ -114,14 +153,14 @@
 
 
 
-# name = input("Enter name: ") # Take someones name from the command line
+name = input("Enter name: ") # Take someones name from the command line
 
-# print("john" in name) # Prints: True if john is name given, or False otherwise
+print("john" in name) # Prints: True if john is name given, or False otherwise
 
 
-# print(4 in [1,2,3]) # Prints: False since no 4 is present in the list
+print(4 in [1,2,3]) # Prints: False since no 4 is present in the list
 
-# print(4 in [1,2,3,4]) # Prints: True since 4 is present in the list
+print(4 in [1,2,3,4]) # Prints: True since 4 is present in the list
 
 
 
@@ -157,21 +196,21 @@
 
 
 
-user_value = int(input("Enter a number between 0 and 5: "))
+# user_value = int(input("Enter a number between 0 and 5: "))
 
-if user_value == 0:
-    print("Zero")
-elif user_value == 1:
-    print("One")
-elif user_value == 2:
-    print("Two")
-elif user_value == 3:
-    print("Three")
-elif user_value == 4:
-    print("Four")
-elif user_value == 5:
-    print("Five")
-else: # If value is not between 0 and 5
-    print("Value provided is not between 0 and 5!")
+# if user_value == 0:
+#     print("Zero")
+# elif user_value == 1:
+#     print("One")
+# elif user_value == 2:
+#     print("Two")
+# elif user_value == 3:
+#     print("Three")
+# elif user_value == 4:
+#     print("Four")
+# elif user_value == 5:
+#     print("Five")
+# else: # If value is not between 0 and 5
+#     print("Value provided is not between 0 and 5!")
 
     
