@@ -85,3 +85,44 @@
 #NEW TOPIC - FUNCTIONS
 
 
+# Gameloop
+# while turns < 100:             # Game goes until 100 score
+#     player_move(player_one) # Player one's move
+#     player_move(player_two) # Player two's move
+#     turns += 1
+
+# if player_one.score > player_two.score:
+#     print("Player One Wins!")
+# elif player_one.score < player_two.score:
+#     print("Player Two Wins!")
+
+
+
+# def sum(num_1, num_2):
+#     """
+#     Takes two variables (int's or floats), and
+#     adds them together, then returns the result
+#     """
+#     result = num_1 + num_2
+#     return result
+
+
+
+def greet(name="John doe", greeting="Hello there: "):
+    """Greets a person with the greeting and their name
+
+    Parameters
+    ----------
+    name: (str)
+        The name to greet by.
+    greeting: (str)
+        The greeting to greet by.
+    """
+    print(name, greeting)
+
+greet()
+greet(name = "Kieran Wood") # Prints: Hello there: Kieran Wood
+greet(greeting = "How it be: ") # Prints
+
+
+
