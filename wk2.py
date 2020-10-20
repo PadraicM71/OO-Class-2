@@ -18,6 +18,9 @@ print(dict ["net worth"]) #refer to name of variable - whats inside sq brackets 
 
 
 
-
-
+dict2 = [
+        {"name":"Jack", "age": 24, "net worth": 2345},
+        {"name":"paul", "age": 34, "net worth": 5645}
+        ]
+print (dict2[1]["name"])
 
