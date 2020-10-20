@@ -153,14 +153,14 @@
 
 
 
-name = input("Enter name: ") # Take someones name from the command line
+# name = input("Enter name: ") # Take someones name from the command line
 
-print("john" in name) # Prints: True if john is name given, or False otherwise
+# print("john" in name) # Prints: True if john is name given, or False otherwise
 
 
-print(4 in [1,2,3]) # Prints: False since no 4 is present in the list
+# print(4 in [1,2,3]) # Prints: False since no 4 is present in the list
 
-print(4 in [1,2,3,4]) # Prints: True since 4 is present in the list
+# print(4 in [1,2,3,4]) # Prints: True since 4 is present in the list
 
 
 
@@ -196,21 +196,21 @@ print(4 in [1,2,3,4]) # Prints: True since 4 is present in the list
 
 
 
-# user_value = int(input("Enter a number between 0 and 5: "))
+user_value = int(input("Enter a number between 0 and 5: "))
 
-# if user_value == 0:
-#     print("Zero")
-# elif user_value == 1:
-#     print("One")
-# elif user_value == 2:
-#     print("Two")
-# elif user_value == 3:
-#     print("Three")
-# elif user_value == 4:
-#     print("Four")
-# elif user_value == 5:
-#     print("Five")
-# else: # If value is not between 0 and 5
-#     print("Value provided is not between 0 and 5!")
+if user_value == 0:
+    print("Zero")
+elif user_value == 1:
+    print("One")
+elif user_value == 2:
+    print("Two")
+elif user_value == 3:
+    print("Three")
+elif user_value == 4:
+    print("Four")
+elif user_value == 5:
+    print("Five")
+else: # If value is not between 0 and 5
+    print("Value provided is not between 0 and 5!")
 
     
