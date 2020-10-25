@@ -44,6 +44,14 @@ dict2 = [
 print (dict2[1]["name"])
 print (dict2[0]["net worth"])
 
+dict2 [1]["bankbalance"] = 115000
+print (dict2[1]["bankbalance"])
+
+# Type Casting
+anyvar1 = "4" # str
+# 2 + anyvar1 would throw an error
+print (2 + int(anyvar1))
+
 
 # Exercises
 
