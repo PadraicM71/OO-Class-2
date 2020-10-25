@@ -1,14 +1,33 @@
-# Wk2
+# Wk1 and Wk2
+
+name = "Padraic"
+print(name)
+name = 'Callum'
+print(name)
+print(type(name))
+
+Var1 = True
+Var2 = False
+print (type(Var1))
 
 
+# Collections:
 
-
-
-
+#Lists
 list1 = [1,2,3]
+list2 = []
+list3 = [1,"paddy",2.35]
 list1.append(4)
 print (type(list1))
-print(list1[3])
+print (list1)
+print(list1[3]) # thisn will print 4
+
+#Tupes
+tup1 = ()
+tup2 = (2,3,4,5)
+tup3 = (2,"paddy",4.55)
+print(tup3[1])
+
 
 
 
@@ -18,15 +37,48 @@ print (dict)
 print(dict ["net worth"]) #refer to name of variable - whats inside sq brackets is a predicate
 
 
-
 dict2 = [
-        {"name":"Jack", "age": 24, "net worth": 2345},
+        {"name":"Jack", "age": 24, "net worth": 2945},
         {"name":"paul", "age": 34, "net worth": 5645}
         ]
 print (dict2[1]["name"])
+print (dict2[0]["net worth"])
 
 
+# Exercises
 
+"""
+    =========== Exercise 1 =============
+
+    Using a list, create a shopping list of 5 items. Then
+    print the whole list, and then each item individually.
+"""
+
+shopping_list = ["apples","garlic","spudz","milk","butter"] # Fill in with some values
+
+print(shopping_list) # Print the whole list
+
+print(shopping_list[2]) # Figure out how to print individual values
+
+
+"""
+    =========== Exercise 2 =============
+
+    Find something that you can eat that has nutrition
+    facts on the label. Fill in the dictionary below with
+    the info on the label and try printing specific information.
+
+    If you can't find anything nearby you can use this example: https://www.donhummertrucking.com/media/cms/Nutrition_Facts_388AE27A88B67.png
+"""
+# When ready to work on these exercises uncomment below code
+
+nutrition_facts = {"salt":3,
+                "sugar":9,
+                "fat":88} # Fill in with the nutrition facts from the label
+
+print(nutrition_facts) # Print all the nutrition facts
+
+print(nutrition_facts["sugar"]) # Uncomment this line and pick a value to print individually
 
 """
     =========== Exercise 3 =============
