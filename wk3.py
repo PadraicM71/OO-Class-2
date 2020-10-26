@@ -165,7 +165,11 @@ print(4 in [1,2,3]) # Prints: False since no 4 is present in the list
 print(4 in [1,2,3,4]) # Prints: True since 4 is present in the list
 
 
-print ("CONDITIONALS")
+print ("CONDITIONALS if else elif")
+# very important: conditional statements are a statement that takes a logical operator and executes code if the operation is True.
+# i.e. True or False ; therefore we use logical operators with them < > <= >= etc
+# important to note here is the logical operator for equals is == (see below, = wont work)
+# single = is used to assign a value to a variable 
 
 # if
 print("if")
@@ -185,39 +189,39 @@ print("ok2")
 # else
 print("else")
 x = 2 # Setting up the x variable
-
 if x < 3:
     x += 2 # This will run if x < 3, otherwise it will be skipped over
 else:
     x -= 1 # This will run if x is not less than 3
-
 print(x) # Since this is on a lower indentation level, this code will run regardless
 
-if x < 3:
-    x += 2 # This will run if x < 3, otherwise it will be skipped over
+t=10
+num1 = input ("type in a number; ")
+if int(num1) <= 10:
+    print("less than or equal to ten.")
 else:
-    x -= 1 # This will run if x is not less than 3
-
-print(x) # Since this is on a lower indentation level, this code will run regard
+    print("number greater than 10.")
 
 
+# elif - if want to check more than two conditions
+print("elif")
 
-# user_value = int(input("Enter a number between 0 and 5: "))
+user_value = int(input("Enter a number between 0 and 5: "))
 
-# if user_value == 0:
-#     print("Zero")
-# elif user_value == 1:
-#     print("One")
-# elif user_value == 2:
-#     print("Two")
-# elif user_value == 3:
-#     print("Three")
-# elif user_value == 4:
-#     print("Four")
-# elif user_value == 5:
-#     print("Five")
-# else: # If value is not between 0 and 5
-#     print("Value provided is not between 0 and 5!")
+if user_value == 0: # == is a comparision operator
+    print("Zero")
+elif user_value == 1:
+    print("One")
+elif user_value == 2:
+    print("Two")
+elif user_value == 3:
+    print("Three")
+elif user_value == 4:
+    print("Four")
+elif user_value == 5:
+    print("Five")
+else: # If value is not between 0 and 5
+    print("Value provided is not between 0 and 5!")
 
     
     
