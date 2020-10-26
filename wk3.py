@@ -68,136 +68,137 @@ print (value2)
 
 #intiger division
 print(5 // 3) # Prints: 1 - if answer is a float then it takes floor of division - rounds down - even if over 0.5
+print (5//8)
 divvalue = 10//6
 print (divvalue/5)
 print (divvalue//5)
 
 
+print ("Shortcuts")
+# Shortcuts
 
+variable_1 = 5 # Initialize the variable to 5
+# variable_1 = variable_1 + 5 # Take the current value of the variable and add 5
+variable_1 += 5 #shortcut - same as above - works with /= aswell etc
+print(variable_1)
 
-# #Shortcuts
+variable_1 = 5 # Initialize the variable to 5
+#variable_1 = variable_1 - 5 # Take the current value of the variable and subtract 5
+variable_1 -= 5
+print(variable_1)
 
-# variable_1 = 5 # Initialize the variable to 5
-# # variable_1 = variable_1 + 5 # Take the current value of the variable and add 5
-# variable_1 += 5 #shortcut - same as above - works with /= aswell etc
-# print(variable_1)
+variable_1 = 5 # Initialize the variable to 5
+#variable_1 = variable_1 / 2 # Take the current value of the variable and floating point divide by 2
+variable_1 /= 5
+print(variable_1)
+print (20 / 5) # sideline - floating point division will always get .0 even if answer is whole number
 
-# variable_1 = 5 # Initialize the variable to 5
-# #variable_1 = variable_1 - 5 # Take the current value of the variable and subtract 5
-# variable_1 -= 5
-# print(variable_1)
+variable_1 = 5 # Initialize the variable to 5
+#variable_1 = variable_1 // 2 # Take the current value of the variable and intege
+variable_1 //= 2
+print (variable_1)
 
-# variable_1 = 5 # Initialize the variable to 5
-# #variable_1 = variable_1 / 2 # Take the current value of the variable and floating point divide by 2
-# variable_1 /= 5
-# print(variable_1)
-
-# variable_1 = 5 # Initialize the variable to 5
-# #variable_1 = variable_1 // 2 # Take the current value of the variable and intege
-# variable_1 //= 2
-# print (variable_1)
-
-
-
-
-
-# print (5//3)
-# print(5 % 3) # Prints: 2 - Modulus - prints the remainder - eg if you wanted to see if a number is divisible
-# # can use variables too etc
+q = 9
+q *= 3
+print (q)
 
 
 
-
-
-
-# print(5 > 3) # Prints: True; since 5 is greater than 3
-
-# result = 5 > 3 # You can store the result in a variable
-
-# print(result) # Prints: True
-
-# print(3 > 5) # Prints: False; since 3 is NOT greater than 5
-
-# print(5 > 5) # Prints: False; since 5 is NOT greater than 5 (they are equal)
-
-# print(5>=5)
-
-
-# print(5 >= 3) # Prints: True; since 5 is greater than 3
-
-# result = 5 >= 3 # You can store the result in a variable
-
-# print(result) # Prints: True
-
-# print(3 >= 5) # Prints: False; since 3 is NOT greater than 5
-
-# print(5 >= 5) # Prints: True; since 5 is equal to 5
-
-
-
-# print (not 5<3) #flips result
-# print(not 5 < 3) # Prints: True; since the statement 5 < 3 evaluates to False
-
-# result = not 5 < 3 # You can store the result in a variable
-
-# print(result) # Prints: True
-
-
-# print(not 3 < 5) # Prints: False; Since the statement 3 < 5 evaluates to True
-
-# print(5 > 3 and 8 > 6) # Prints: True; since both statements evaluate to True
-
-# print(5 < 3 and 8 > 6) # Prints: False; since the first statement evaluates to F
-
-
-
-# print(5 < 3 or 8 > 6) # Prints: True; since both statements evaluate to True
-
-# print(5 > 3 or 8 > 6) # Prints: True; since the second statement evaluates to T
+# Modulus
+print("modulus")
+print (5//3)
+print(5 % 3) # Prints: 2 - Modulus - prints the remainder - eg if you wanted to see if a number is divisible
+# can use variables too etc
+print(10%2)
+x = 0
+y = x % 6
+print (y) # because 0/anything = 0
 
 
 
 
+print("logical operators")
+
+print(5 > 3) # Prints: True; since 5 is greater than 3
+
+result = 5 > 3 # You can store the result in a variable
+
+print(result) # Prints: True
+
+print(3 > 5) # Prints: False; since 3 is NOT greater than 5
+
+print(5 > 5) # Prints: False; since 5 is NOT greater than 5 (they are equal)
+
+print(5>=5)
+
+
+print(5 >= 3) # Prints: True; since 5 is greater than 3
+
+result = 5 >= 3 # You can store the result in a variable
+
+print(result) # Prints: True
+
+print(3 >= 5) # Prints: False; since 3 is NOT greater than 5
+
+print(5 >= 5) # Prints: True; since 5 is equal to 5
+
+
+print("not")
+print (not 5<3) #flips result
+print(not 5 < 3) # Prints: True; since the statement 5 < 3 evaluates to False
+result = not 5 < 3 # You can store the result in a variable
+print(result) # Prints: True
+print(not 3 < 5) # Prints: False; Since the statement 3 < 5 evaluates to True
+
+print ("and")
+print(5 > 3 and 8 > 6) # Prints: True; since both statements evaluate to True
+print(5 < 3 and 8 > 6) # Prints: False; since the first statement evaluates to F
+
+print("or")
+print(5 < 3 or 8 > 6) # Prints: True; since both statements evaluate to True
+print(5 > 3 or 8 > 6) # Prints: True; since the second statement evaluates to T
+
+print ("in")
 # name = input("Enter name: ") # Take someones name from the command line
-
 # print("john" in name) # Prints: True if john is name given, or False otherwise
+print(4 in [1,2,3]) # Prints: False since no 4 is present in the list
+print(4 in [1,2,3,4]) # Prints: True since 4 is present in the list
 
 
-# print(4 in [1,2,3]) # Prints: False since no 4 is present in the list
+print ("CONDITIONALS")
 
-# print(4 in [1,2,3,4]) # Prints: True since 4 is present in the list
-
-
-
-# x = 1 # Setting up the x variable
-
-# if x < 3:
-#     x += 2 # This will run if x < 3, otherwise it will be skipped over
-
-# print(x) # Since this is on a lower indentation level, this code will run regardless
-
-# if x <= 3:
-#     x += 2 # This will run if x < 3, otherwise it will be skipped over
-
-# print(x) # Since this is on a lower indentation level, this code will run regard
+# if
+print("if")
+x = 1 # Setting up the x variable
+if x < 3:
+    x += 2 # This will run if x < 3, otherwise it will be skipped over
+print(x) # Since this is on a lower indentation level, this code will run regardless
+if x <= 3:
+    x += 2 # This will run if x < 3, otherwise it will be skipped over
+print(x) # Since this is on a lower indentation level, this code will run regard
+z=5
+if z > 6:
+    print("ok")
+print("ok2")
 
 
+# else
+print("else")
+x = 2 # Setting up the x variable
 
-# x = 2 # Setting up the x variable
+if x < 3:
+    x += 2 # This will run if x < 3, otherwise it will be skipped over
+else:
+    x -= 1 # This will run if x is not less than 3
 
-# if x < 3:
-#     x += 2 # This will run if x < 3, otherwise it will be skipped over
-# else:
-#     x -= 1 # This will run if x is not less than 3
+print(x) # Since this is on a lower indentation level, this code will run regardless
 
-# print(x) # Since this is on a lower indentation level, this code will run regardless
+if x < 3:
+    x += 2 # This will run if x < 3, otherwise it will be skipped over
+else:
+    x -= 1 # This will run if x is not less than 3
 
-# if x < 3:
-#     x += 2 # This will run if x < 3, otherwise it will be skipped over
-# else:
-#     x -= 1 # This will run if x is not less than 3
-
-# print(x) # Since this is on a lower indentation level, this code will run regard
+print(x) # Since this is on a lower indentation level, this code will run regard
 
 
 
