@@ -21,6 +21,11 @@ list1.append(4)
 print (type(list1))
 print (list1)
 print(list1[3]) # thisn will print 4
+print(type(list3))
+print("here")
+print (type(list3[1]))
+
+
 
 #Tupes
 tup1 = ()

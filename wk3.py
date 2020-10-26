@@ -2,70 +2,75 @@
 
 
 
-# print (5+3)
-# sum_value = 5+8
-# sum_2 = 6 + sum_value
-# print (sum_value)
-# print (sum_2)
+print (5+3)
+sum_value = 5+8
+sum_2 = 6 + sum_value
+print (sum_value)
+print (sum_2)
 
 
-# my_list = [1,2,3,4] # Initialize my_list
+my_list = [1,2,3,4] # Initialize my_list
 
-# my_list_2 = [5,6,7,8] # Initialize my_list_2
+my_list_2 = [5,6,7,8] # Initialize my_list_2
 
-# my_list = my_list + my_list_2 # Take the current value of my_list and add my_list_2 to it
+my_list = my_list + my_list_2 # Take the current value of my_list and add my_list_2 to it
 
-# print(my_list) # Prints: [1, 2, 3, 4, 5, 6, 7, 8]
-
-
-# name = "Hello " # Set name variable to an string 'hello ' space here also for joining to world
-
-# name = name + "World!" # Take the current name value and add 'world' to it
-
-# print(name) # Prints: Hello World!
+print(my_list) # Prints: [1, 2, 3, 4, 5, 6, 7, 8]
 
 
+name = "Hello " # Set name variable to an string 'hello ' space here also for joining to world
 
-# my_list = [] # Initialize an empty list
+name = name + "World!" # Take the current name value and add 'world' to it
+
+print(name) # Prints: Hello World!
+
+
+
+# my_list3 = [] # Initialize an empty list
 # name = "John" # Initialize name variable to John
-# my_list = my_list + name # Adding the current my_list variable to the string name
-# print(my_list) # Prints: ['j','o','h','n']
+# my_list3 = my_list3 + name # Adding the current my_list variable to the string name
+# print(my_list3) # Prints: ['j','o','h','n']
 # #this will not work on new vervion of python - worked on earlier versions??
 # #dont worry about this too much
 
-# print(5-3)
-# subvalue=5-8
-# print (subvalue -6)
+
+print(5-3)
+subvalue=5-8
+print (subvalue -6)
 
 
 
 
-# mul=5*6
-# print(mul*8)
+mul=5*6
+print(mul*8)
+mul1 = mul * 100
+print (mul1)
+
+
+mul2 = [1,2,3,4] # Initialize my_list
+
+mul2 = mul2 * 3 # Take my_list and multiply it by 3
+
+print(mul2) # Prints: [1,2,3,4,1,2,3,4,1,2,3,4]
 
 
 
-# my_list = [1,2,3,4] # Initialize my_list
 
-# my_list = my_list * 3 # Take my_list and multiply it by 3
-
-# print(my_list) # Prints: [1,2,3,4,1,2,3,4,1,2,3,4]
-
-
-
-
-# # floating point division
-# print (5/2)
-# value=5/4
-# print(value)
-# print (value/3)
+# floating point division
+print (5/2)
+value=5/4
+print(value)
+print (value/3)
+value2 = value /8
+print (value2)
 
 
-# #intiger division
-# print(5 // 3) # Prints: 1 - if answer is a float then it takes floor of division - rounds down - even if over 0.5
-# divvalue = 10//6
-# print (divvalue/5)
-# print (divvalue//5)
+
+#intiger division
+print(5 // 3) # Prints: 1 - if answer is a float then it takes floor of division - rounds down - even if over 0.5
+divvalue = 10//6
+print (divvalue/5)
+print (divvalue//5)
 
 
 
@@ -196,22 +201,22 @@
 
 
 
-user_value = int(input("Enter a number between 0 and 5: "))
+# user_value = int(input("Enter a number between 0 and 5: "))
 
-if user_value == 0:
-    print("Zero")
-elif user_value == 1:
-    print("One")
-elif user_value == 2:
-    print("Two")
-elif user_value == 3:
-    print("Three")
-elif user_value == 4:
-    print("Four")
-elif user_value == 5:
-    print("Five")
-else: # If value is not between 0 and 5
-    print("Value provided is not between 0 and 5!")
+# if user_value == 0:
+#     print("Zero")
+# elif user_value == 1:
+#     print("One")
+# elif user_value == 2:
+#     print("Two")
+# elif user_value == 3:
+#     print("Three")
+# elif user_value == 4:
+#     print("Four")
+# elif user_value == 5:
+#     print("Five")
+# else: # If value is not between 0 and 5
+#     print("Value provided is not between 0 and 5!")
 
     
     
