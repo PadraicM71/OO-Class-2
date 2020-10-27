@@ -1,6 +1,9 @@
 # wk4
 
 
+#loops
+#iterations!
+
 
 # while loop
 x = 0 # Setup a variable to use for the conditional
@@ -35,30 +38,42 @@ print("loop has exited")
 
 
 
-#continue
+#continue - see below - this is a bad example to use
 x = 0 # Initialize a variable to use in the condition
 
 while x < 10:
     x += 1
-    if ((x % 2) == 0): # If the number is even
-        print(x)
+    if ((x % 2) == 0): # If the number is even - also here we have another condition we have extra indent
+        print(x) #this print belongs to the if condition - double indent
 
     else: # If the number is odd
-        continue # Go to next iteration
+        print(str(x) + " not an even number")
+        continue # Go to next iteration - see below
+    #actually from class 'continue' is not needed here for this to work - bad example - but you get the idea!
 
 
 
-# #loop nesting
-# shopping_lists = [["Eggs", "Milk", "Ham"], 
-#                   ["Vinegar", "Mustard", "Ketchup"], 
-#                   ["Burgers", "Lettuce", "Mayo"]]
 
-# for current_list in shopping_lists: # Steps through the list of lists
-#     for item in current_list: # Steps through each list
-#         print(item) # Prints the item in the current shopping list
+print("loop tricks and techniques")
+
+#avoid infinate loops!
+#stop with ctrl c
+
+
+#loop nesting
+#note here 3 lists in a list - can be used for dictionaries tupes etc
+# an array within another array
+shopping_lists = [["Eggs", "Milk", "Ham"], 
+                  ["Vinegar", "Mustard", "Ketchup"], 
+                  ["Burgers", "Lettuce", "Mayo"]]
+
+for current_list in shopping_lists: # Steps through the list of lists
+    for item in current_list: # Steps through each list
+        print(item) # Prints the item in the current shopping list
 
 
 # #USING LOOPS FOR VALIDATION
+# #using a loop to validate input from a user
 # while True: # This is an infinite loop
 #   number = int(input("Please type a number between 1 and 10: ")) # Take user input
 
@@ -74,9 +89,12 @@ while x < 10:
 
 
 
-# #FOR LOOPS OVER A SET RANGE
-# for number in range(5,11):
-#     print(number)
+#FOR LOOPS OVER A SET RANGE range() function takes two arguments
+for number in range(5,11): # prints 5 to 10 - wont include 11
+    print(number)
+# also
+for w in range(3):
+    print(w)
 
 
 
