@@ -2,49 +2,49 @@
 
 
 
-#while loop
-# x = 0 # Setup a variable to use for the conditional
+# while loop
+x = 0 # Setup a variable to use for the conditional
 
-# while x <= 10: # Continue looping until x is greater than 10
-#     print(x) # Print the current itterations value of x
-#     x += 1 # Inrement x by 1 (add 1 to the current value of x)
+while x <= 10: # Continue looping until x is greater than 10
+    print(x) # Print the current iterations value of x
+    x += 1 # Inrement x by 1 (add 1 to the current value of x)
 
-# print("loop Finished") # This will execute after the loop since it's at a lower indentation level
-
-
-
-# #for loop
-# shopping_list = ["Eggs", "Ham", "Milk"]
-
-# for item in shopping_list: # Iterate through the shopping list
-#     print(item) # Print the item at the current iteration
+print("loop Finished") # This will execute after the loop since it's at a lower indentation level
 
 
 
-# #break loop
-# greeting = "Hello-World" # Setting up a string to iterate through
+#for loop
+shopping_list = ["Eggs", "Ham", "Milk"]
 
-# for character in greeting: # Iterate over the string one letter at a time
-#     if "-" in character: # if the current character is a hyphen
-#         print("Hyphen detected, ending loop!")
-#         break # End the loop
-#     else:
-#         print(character) # Print the current character
-
-# print("loop has exited")
+for z in shopping_list: # Iterate through the shopping list
+    print(z) # Print the item at the current iteration
 
 
 
-# #continue
-# x = 0 # Initialize a variable to use in the condition
+#break loop
+greeting = "Hello-World" # Setting up a string to iterate through
 
-# while x < 10:
-#     x += 1
-#     if ((x % 2) == 0): # If the number is even
-#         print(x)
+for character in greeting: # Iterate over the string one letter at a time
+    if "-" in character: # if the current character is a hyphen
+        print("Hyphen detected, ending loop!")
+        break # End the loop
+    else:
+        print(character) # Print the current character
 
-#     else: # If the number is odd
-#         continue # Go to next iteration
+print("loop has exited")
+
+
+
+#continue
+x = 0 # Initialize a variable to use in the condition
+
+while x < 10:
+    x += 1
+    if ((x % 2) == 0): # If the number is even
+        print(x)
+
+    else: # If the number is odd
+        continue # Go to next iteration
 
 
 
@@ -108,21 +108,21 @@
 
 
 
-def greet(name="John doe", greeting="Hello there: "):
-    """Greets a person with the greeting and their name
+# def greet(name="John doe", greeting="Hello there: "):
+#     """Greets a person with the greeting and their name
 
-    Parameters
-    ----------
-    name: (str)
-        The name to greet by.
-    greeting: (str)
-        The greeting to greet by.
-    """
-    print(name, greeting)
+#     Parameters
+#     ----------
+#     name: (str)
+#         The name to greet by.
+#     greeting: (str)
+#         The greeting to greet by.
+#     """
+#     print(name, greeting)
 
-greet()
-greet(name = "Kieran Wood") # Prints: Hello there: Kieran Wood
-greet(greeting = "How it be: ") # Prints
+# greet()
+# greet(name = "Kieran Wood") # Prints: Hello there: Kieran Wood
+# greet(greeting = "How it be: ") # Prints
 
 
 
