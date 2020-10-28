@@ -47,6 +47,11 @@ import datetime #The module works off of classes that you can use to create obje
 
 # CLASSES
 
+# Python Classes/Objects
+# Python is an object oriented programming language.
+# Almost everything in Python is an object, with its properties and methods.
+# A Class is like an object constructor, or a "blueprint" for creating objects.
+
 
 # class Animal:  #reserved word class - here has 3 attritubes
 #   def __init__(self, species_name, regions, common_name):
