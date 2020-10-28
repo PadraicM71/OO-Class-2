@@ -53,7 +53,7 @@ for item in shopping_list: # Iterate over the items in the shopping list
 #     for item in list_to_parse:
 #         print(item)
 # """
-#     =========== Exercise 2 =============
+#     =========== Exercise 2 =============   # Michael had a problem with this.
 #     Implement the delete_item() function
 #     below, all the details to do so should
 #     be there for you.
@@ -80,5 +80,5 @@ for item in shopping_list: # Iterate over the items in the shopping list
 # print(shopping_list)
 
 
-
+#
 
