@@ -48,7 +48,39 @@ import datetime #The module works off of classes that you can use to create obje
 # CLASSES
 
 
-class Animal:
+# class Animal:  #reserved word class - here has 3 attritubes
+#   def __init__(self, species_name, regions, common_name):
+#     """A class to represent a generic animal
+
+#     Attributes
+#     ----------
+#     species_name : (str) 
+#         The technical species name of the animal
+#     regions : (list[str]) 
+#         A list of regions the animal is endemic to
+#     common_name : (str) 
+#         The colloquial name of the animal
+#     """
+#     self.species_name = species_name
+#     self.regions = regions
+#     self.common_name = common_name
+
+
+# leopard_gecko = Animal("Eublepharis macularius",
+#     ["Afghanistan","Pakistan","India", "Iran"],
+#     "Common Leopard Gecko")
+# #We have now INSTANTIATED the leopard_gecko INSTANCE
+# #here the leopard_geko instance is passed to the class and becomes the 'self' in the class
+
+# print(leopard_gecko.common_name)
+
+
+
+
+#now add functions inside the classes - called Methods
+#'self' instance that is been passed - the one created by the constructor -me
+
+class Animal:  #reserved word class - here has 3 attritubes
   def __init__(self, species_name, regions, common_name):
     """A class to represent a generic animal
 
@@ -64,12 +96,29 @@ class Animal:
     self.species_name = species_name
     self.regions = regions
     self.common_name = common_name
+  def print_info(self):
+    """Prints information about animal instance"""
+    print(f"\nCommon Name: {self.common_name}\nSpecies: {self.species_name}\nRegions: {self.regions}")
+
+
+#here defining a new Method - and again passing self,
+#passing that instance that we create -leopard_geko
+#\n (comes from unix terminology - stands for a new line)
 
 
 leopard_gecko = Animal("Eublepharis macularius",
     ["Afghanistan","Pakistan","India", "Iran"],
     "Common Leopard Gecko")
-#We have now INSTANTIATED the leopard_gecko INSTANCE
+
+
+"""Prints (not returns)
+Common Name: Common Leopard Gecko
+Species: Eublepharis macularius
+Regions: ['Afghanistan','Pakistan','India', 'Iran']
+"""
+leopard_gecko.print_info()     #because its a function it has the brackets there
+#this will call the print_info() method
+
 
 
 
@@ -126,3 +175,19 @@ leopard_gecko = Animal("Eublepharis macularius",
 
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#before proceed define each element in a class - know the lingo - __init__ what is this? etc
