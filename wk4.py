@@ -147,7 +147,7 @@ def greet(name="John doe", greeting="Hello there: "):
     greeting: (str)
         The greeting to greet by.
     """
-    print(name, greeting)
+    print(greeting, name)
 
 greet()
 greet(name = "Kieran Wood") # Prints: Hello there: Kieran Wood
