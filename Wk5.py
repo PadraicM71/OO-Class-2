@@ -84,7 +84,9 @@ import datetime #The module works off of classes that you can use to create obje
 
 #now add functions inside the classes - called Methods
 #'self' instance that is been passed - the one created by the constructor -me
-
+#class name capital letter
+#we define an init Method
+#self - 
 class Animal:  #reserved word class - here has 3 attritubes
   def __init__(self, species_name, regions, common_name):
     """A class to represent a generic animal
@@ -114,15 +116,16 @@ class Animal:  #reserved word class - here has 3 attritubes
 leopard_gecko = Animal("Eublepharis macularius",
     ["Afghanistan","Pakistan","India", "Iran"],
     "Common Leopard Gecko")
-
-
 """Prints (not returns)
 Common Name: Common Leopard Gecko
 Species: Eublepharis macularius
 Regions: ['Afghanistan','Pakistan','India', 'Iran']
 """
+
+
 leopard_gecko.print_info()     #because its a function it has the brackets there
 #this will call the print_info() method
+#we just used the print_info Method inside the Class that we created
 
 
 
