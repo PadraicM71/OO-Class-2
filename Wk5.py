@@ -86,7 +86,14 @@ import datetime #The module works off of classes that you can use to create obje
 #'self' instance that is been passed - the one created by the constructor -me
 #class name capital letter
 #we define an init Method
-#self - 
+#before instance exists it needs to be initiated constructor - Michail
+#
+#self - for all instance attributes (variables specific to each instance and not the overall
+# class) we are adding a 'self' in front with a dot.
+# this is because when we create an 'instance', all of the variables are 'localised' to
+# that 'instance'.
+#The word self is used to represent the instance of a class and by using the self keyword
+# we acess the Attributes and Methods of a class in Python.
 class Animal:  #reserved word class - here has 3 attritubes
   def __init__(self, species_name, regions, common_name):
     """A class to represent a generic animal
