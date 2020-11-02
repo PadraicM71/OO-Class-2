@@ -84,8 +84,8 @@ import datetime #The module works off of classes that you can use to create obje
 
 #now add functions inside the classes - called Methods
 #'self' instance that is been passed - the one created by the constructor -me
-#class name capital letter
-#we define an init Method
+#class name capital letter - we define our class 'Classname'
+#next we define an init Method
 #before instance exists it needs to be initiated constructor - Michail
 #
 #self - for all instance attributes (variables specific to each instance and not the overall
@@ -94,7 +94,9 @@ import datetime #The module works off of classes that you can use to create obje
 # that 'instance'.
 #The word self is used to represent the instance of a class and by using the self keyword
 # we acess the Attributes and Methods of a class in Python.
-class Animal:  #reserved word class - here has 3 attritubes
+class Animal:  #reserved word class - here has 3 attritubes - this is class definition
+  counter = 0 # Initialize counter to 0 - becomes global for this specific Class
+  # This ^^ is a class variable since it is outside of __init__ and has no self. in front
   def __init__(self, species_name, regions, common_name):
     """A class to represent a generic animal
 
@@ -110,14 +112,17 @@ class Animal:  #reserved word class - here has 3 attritubes
     self.species_name = species_name
     self.regions = regions
     self.common_name = common_name
+    Animal.counter += 1 # Accessing and incrementing the class counter by 1 on each instantiation of an Animal
+                        # belongs to Animal Class so no self!
   def print_info(self):
     """Prints information about animal instance"""
     print(f"\nCommon Name: {self.common_name}\nSpecies: {self.species_name}\nRegions: {self.regions}")
-
-
 #here defining a new Method - and again passing self,
 #passing that instance that we create -leopard_geko
 #\n (comes from unix terminology - stands for a new line)
+
+
+print(Animal.counter) #should print 0
 
 
 leopard_gecko = Animal("Eublepharis macularius",
@@ -134,7 +139,73 @@ leopard_gecko.print_info()     #because its a function it has the brackets there
 #this will call the print_info() method
 #we just used the print_info Method inside the Class that we created
 
+arctic_fox = Animal("Vulpes lagopus",
+    ["The Arctic"],
+    "Arctic fox")
+#Self;
+#Instance versus Class attributes.
+#Instance
+#so if use Animal Class
+#now have 2 different animal instances and variables dont overlap
 
+#This is the same with instance methods.
+#The variables it pulls are specific to the instance and not the class.
+
+leopard_gecko.print_info()
+"""Prints (not returns)
+'Common Name: Common Leopard Gecko
+Species: Eublepharis macularius
+Regions: ["Afghanistan","Pakistan","India", "Iran"]'
+"""
+
+arctic_fox.print_info()
+"""Prints (not returns)
+'Common Name: Arctic fox
+Species: Vulpes lagopus
+Regions: ["The Arctic"]'
+"""
+
+#Class attributes on the other hand are attributes that are common among all instances of a class.
+#you wanted to keep a counter that goes up by 1 for every time a new animal is added.
+#Since this information, is not specific to an instance, but rather to every instance of a
+#given class you would want it to be accessible to every instance.
+#see counter above - Now there is a counter variable that can be used to find out how many animals have been instantiated
+
+print(Animal.counter) # Prints 2; since the Leopard Gecko, and Arctic fox have been instantiated
+
+# Both below calls print 2; Class variables are also accessible in any instance
+print(arctic_fox.counter)
+print(leopard_gecko.counter)
+#As you can see because the variable belongs to the class and not the instance, it is available to
+#both the class as a variable, or any instances of the Animal class.
+
+
+
+
+#Class Methods
+#Methods are functions that are accessible through class instances, for example let's say
+#you want to create a function to print all of the attributes of a class you could define the
+#function in the class and then use the self operator to print the information.
+#print_info() method used earlier is a class method.
+#Setting up class methods is the same as setting up a regular function, you just need to indent it to 
+#the same line as the class and always pass self as an argument.
+#Dunder or magic methods in Python are the methods having two prefix and suffix underscores in the method name.
+#Dunder here means “Double Under (Underscores)”.
+#These are commonly used for operator overloading – we will cover this later in the semester.
+#Few examples for magic methods are: init, add, len, repr etc. - later semister
+#__init__ METHOD
+#The __init__ is a reserved method in python acts as a constructor (sort of) in Python.
+#This method is called when an object is created from a class and it allows the class to initialise the attributes of the class.
+#This means that it 'constructs' the instance.
+#In our analogy of a cookie cutter from earlier, the __init__ method would be the actual cutting of the cookie.
+#The method is run every time you instantiate an instance. For example when you run the leopard_gecko example from before:
+#leopard_gecko = Animal("Eublepharis macularius",
+ #   ["Afghanistan","Pakistan","India", "Iran"],
+  #  "Common Leopard Gecko")
+#The variable is making an implicit call to __init__, this would roughly be equivalent to:
+#leopard_gecko = Animal.__init__("Eublepharis macularius",     -but we dont need to state __init__ as magic method - shortcut
+#    ["Afghanistan","Pakistan","India", "Iran"],
+ #   "Common Leopard Gecko")
 
 
 
