@@ -1,5 +1,7 @@
 # Wk 5
 
+# Week 5 exercises - discussions are from last 30min of wk5 
+
 
 # name = "John Doe"
 # print(f"hello, {name}")
@@ -398,3 +400,7 @@ corresponds to the __init__ method.
 
 
 #before proceed define each element in a class - know the lingo - __init__ what is this? etc
+
+
+
+# Week 5 exercises - discussions are from last 30min of wk5 
