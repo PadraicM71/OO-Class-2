@@ -213,10 +213,35 @@ print(leopard_gecko.counter)
 
 
 
+#As you can see, you can do some basic logic in the __init__ method, such as for loops.
+
+class CookieBaker:
+  def __init__(self, number_of_cookies):
+    """ Example class that is used to show off the __init__ method.
+    The __init__ method calls prints 'Cookie Baked' as many times as there are number_of_cookies.
+
+    Attributes
+    ----------
+    number_of_cookies(int): How many cookies to bake
+    """
+    print(f"__init__ method called, creating {number_of_cookies} cookie(s):")
+    self.number_of_cookies = number_of_cookies
+    for cookie in range(number_of_cookies):
+      print("Cookie Baked!")
+
+def bake_cookie(self):
+    """Print's 'Cookie Baked!'."""
+    print("Cookie Baked!")
+
+CookieBaker(5)
+
+
+#You can also call methods, just make sure to include self. when calling them since you are inside the instance.
+#see diference here
 # class CookieBaker:
 #   def __init__(self, number_of_cookies):
 #     """ Example class that is used to show off the __init__ method.
-#     The __init__ method calls prints 'Cookie Baked' as many times as there are number_of_cookies.
+#     The __init__ method calls the bake_cookie() method as many times as there are number_of_cookies.
 
 #     Attributes
 #     ----------
@@ -225,19 +250,63 @@ print(leopard_gecko.counter)
 #     print(f"__init__ method called, creating {number_of_cookies} cookie(s):")
 #     self.number_of_cookies = number_of_cookies
 #     for cookie in range(number_of_cookies):
-#       print("Cookie Baked!")
+#       self.bake_cookie()      #to call below method
+
+#   def bake_cookie(self):
+#     """Print's 'Cookie Baked!'."""
+#     print("Cookie Baked!")
+#method for printing out cookies is living in a seperate Method that we defined.
 
 
 
-# CookieBaker(5)
+"""
+Keep in mind that like other variables python will let you override class variables without question.
+So they can be modified from the class at will.
+For example:
+
+print(Animal.counter) # Prints 0; since no Animal's have been instantiated
+leopard_gecko = Animal("Eublepharis macularius",
+    ["Afghanistan","Pakistan","India", "Iran"],
+    "Common Leopard Gecko")
+
+print(Animal.counter) # Prints 1; since the Leopard Gecko has been instantiated
+
+Animal.counter = 35 # Overriding the variable from the class
+
+print(Animal.counter) # Prints 35; since the attribute has been overridden
+print(leopard_gecko.counter) # Prints 35; since the attribute has been overridden
+
+
+Me - this is interesting below!
+But if you try to modify a class variable from an instance, then it will create an instance variable 
+that is now local to the instance while leaving the class variable in tact:
+
+print(Animal.counter) # Prints 0; since no Animal's have been instantiated
+leopard_gecko = Animal("Eublepharis macularius",
+    ["Afghanistan","Pakistan","India", "Iran"],
+    "Common Leopard Gecko")
+
+print(Animal.counter) # Prints 1; since the Leopard Gecko has been instantiated
+
+Animal.counter = 35 # Overriding the variable from the class
+
+print(Animal.counter) # Prints 35; since the attribute has been overridden
+
+leopard_gecko.counter = 26 # creating an instance variable from the class attribute
+
+print(Animal.counter) # Prints 35; since the class attribute WONT be modified by changing the gecko instance counter
+print(leopard_gecko.counter) # Prints 26; since the instance attribute has been created
+
+"""
 
 
 
 
 
 
-
-
+#Dataclasses in Python
+# If you are just storing variables there is also a useful module inside the Python standard library called dataclasses this
+# library makes creating useful classes that just store data much faster.
 
 # import datetime
 # class user:
@@ -259,20 +328,72 @@ print(leopard_gecko.counter)
 #     self.premium_member = premium_member
 
 
+
+"""
+Now thats a lot of self.attribute_name's, dataclasses will automate the __init__ method (and __repr__ method).
+"""
+#instead of above we can import dataclass from dataclasses - inbuilt in Python
+import datetime
+from dataclasses import dataclass
+
+@dataclass
+class user:
+    """A class to represent a generic animal
+
+    Attributes
+    ----------
+    name(str): The technical species name of the animal
+    age(str): A list of regions the animal is endemic to
+    sign_up_date(datetime.datetime): A datetime object of the day the user signed up
+    birthday(datetime.datetime): A datetime object of the users birthday
+    premium_member(bool): Whether the user is on premium or free subscription
+    """
+    name:str
+    age:str
+    sign_up_date:datetime.datetime
+    birthday:datetime.datetime
+    premium_member:bool
     
+#shortcut - save time
+
+user1 = user("john",69,datetime.date(1961, 4, 12),datetime.date(1961, 4, 12), True)
+print(user1.name)
 
 
 
 
+# SEE GLOSSARY IN NOTES - copied below
+"""
+Class: A template to create Instance(s)/Object(s) from.
+Classes exist to bundle data (attributes) and functions (methods) into abstractions that are meaningful.
+A good analogy is to think of a cookie cutter as a class, that is a template used 
+to cut (instantiate) cookies (Instance(s)/Object(s))
+For example you could have an Animal class that can be used to create Instance(s)/Object(s) to 
+bundle data and functions about animals, or a user class that can be used to create Instance(s)/Object(s) to 
+bundle data and functions about each user of an app.
 
 
+Instance/Object: An object representing something, created from a class (used as a template).
+A good analogy is to think of a cookie cutter as a class, that is a template used to cut (instantiate) 
+cookies (Instance(s)/Object(s)).
+For example if you had an Animal class, you could use it to instantiate a leopard gecko instance that has 
+all the data (attributes) and 
+functions (methods) necessary to represent a leopard gecko.
+In Python people use Instance and Object interchangeably, and the same is true for many 
+other object-oriented languages.
 
 
+Instantiate: The act of creating (initialising) an Instance/Object from a class.
+A good analogy is to think of a cookie cutter as a class, that is a template used to 
+cut (instantiate) cookies (Instance(s)/Object(s))
+Attribute: A variable that is specific to a class or Instance/Object.
 
+Method: A function that is specific to a class or Instance/Object.
 
-
-
-
+Constructor: What typically gets called on instantiation of an Instance/Object.
+This is a concept used broadly in object-oriented languages, but in python this roughly 
+corresponds to the __init__ method.
+"""
 
 
 
