@@ -23,7 +23,7 @@ import math # Brings the whole math module in
 
 
 
-from core import calc as super_func,
+from core import calc as super_func, iterate 
 iterate
 
 print(super_func(10,15))
