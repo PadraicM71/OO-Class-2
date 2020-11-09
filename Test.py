@@ -1,38 +1,42 @@
-# # Test File
+# #Test File
 
 
-# name = 'Callum'
-# print (name)
 
-# print (type(name))
+# x = 0
 
-# lst = [1,2,'tree',True,34.25]
-# print (lst)
-# print(type(lst[3]))
-# lst.append(False)
-# print (lst)
-# print(type(lst[5]))
-
-# tst = input('Test Input: ')
-# print(tst)
-# print(type(tst))
-
-# di = {"name":"Callum","age":11,"Good?":True}
-# print(di)
-# print (di["name"])
-# di ["game"] = 59
-# print (di)
+# while x <= 10:
+#     print (x)
+#     x += 1
 
 
-# ok = int(tst)
-# print (ok)
+# list = ["one","two","three","four"]
 
-# x = int(input("say what?"))
-# print (x)
+# for y in list:
+#     print (y)
+#     if "three" in y:
+#         break
 
 
-s = "36"
-print(type(s))
-s = int(s)
-print(type(s))
+# test = "qwertyzqwerty"
+# for t in test:
+#     print (t)
+#     if "z" in t:
+#         break
 
+
+# p = 0
+
+# while p <= 10:
+#     p += 1
+#     if (p%2) == 0:
+#         print (p)
+#     else:
+#         print ("odd number")
+
+s = 0
+while True:
+    print ("Ya TRUE")
+    print (s)
+    s+=1
+    if s == 10:
+        break
