@@ -405,3 +405,30 @@ corresponds to the __init__ method.
 
 
 # Week 5 exercises - discussions are from last 30min of wk5 
+
+
+
+class People:
+    count = 0 # initialize count to 0 - becomes Global for this specific Class
+    def __init__(self, name ,age):
+        self.name = name
+        self.age = age
+        People.count += 1
+    def myfunc(self):
+        print("hello there " + "\nyour name is " + "\n" + self.name)
+
+
+
+print (People.count)
+
+k1 = People("qwerrty", 36)
+print (People.count)
+k2 = People("joe", 45)
+print (People.count)
+k3 = People("john", 56)
+
+print (People.count)
+
+print(k1.name)
+k1.myfunc()
+
