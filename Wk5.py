@@ -24,7 +24,8 @@ import datetime #The module works off of classes that you can use to create obje
 #to create a simple date object you just need to provide 3 attributes – 
 # a year (int), a month (int), and day (int)
 # lots of modules in Python itself - this one is included with Python distrubition already
-
+f = datetime.date.today()
+print (f)
 # appolo_11_launch = datetime.date(1959, 9, 13)
 # falcon_9_first_launch = datetime.date(2010, 6, 4)
 # print(falcon_9_first_launch > appolo_11_launch) # prints: True
