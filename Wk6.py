@@ -10,7 +10,7 @@ import math # Brings the whole math module in
 
 # from math import sqrt # brings in JUST the sqrt() function from the math module
 
-# print(sqrt(4)) # Prints the square root of 4, which is 2
+# # print(sqrt(4)) # Prints the square root of 4, which is 2
 
 
 
@@ -23,8 +23,15 @@ import math # Brings the whole math module in
 
 
 
+
+
+
+
+
+#create an application calling another python file where we have a certain function
+
 from core import calc as super_func, iterate 
-iterate
+
 
 print(super_func(10,15))
 

@@ -5,6 +5,7 @@ from tqdm import tqdm
 from time import sleep
 
 
+#define our function - starts with def
 
 def calc(num_1,num_2):
     """Multiplies 2 numbers and subtracts 20"""
