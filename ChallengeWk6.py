@@ -30,7 +30,8 @@ def challenge_one():
     """
 
     import time
-    for number in range(10):
+    from tqdm import tqdm
+    for number in tqdm(range(10)):
         time.sleep(1) #Waits one second before continuing.
 
 def challenge_two():

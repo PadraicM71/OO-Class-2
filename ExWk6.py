@@ -10,6 +10,13 @@
     NOTE: you have the input converted to an int
     automatically using int(input()).
 """
+from math import sqrt
+
+
+user_input = int(input("enter number sq root "))
+
+print(sqrt(user_input))
+
 
 
 """
@@ -18,6 +25,10 @@
     import the sleep function from the time module as pause
     and run pause(5)
 """
+from time import sleep as pause
+print("hello")
+pause(5)
+print ("hello again")
 
 
 """
@@ -30,3 +41,9 @@
 
     Which pause() will be called, and why?
 """
+
+def pause(pr):
+    print(pr)
+
+
+pause(4)
