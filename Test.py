@@ -47,10 +47,13 @@ x = 2
 while True:
   num1 = (number%x)
   print (num1)
-  if num1 == 0:
-    print("Number is composite")
+
+  if x == number:
+    print("Number is prime")
     break
 
-  elif x == number:
-    print("Number is prime")
+  elif num1 == 0:
+    print("Number is composite")
     x += 1
+
+ 
