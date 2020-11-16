@@ -42,18 +42,22 @@
 # print(k1.name)
 # k1.myfunc()
 
-number = int(input("Please type a number: "))
+number = int(input("Please type a number Susan: "))
 x = 2
 while True:
   num1 = (number%x)
-  print (num1)
+ # print (num1)
 
   if x == number:
-    print("Number is prime")
+    print("Number is prime Susan")
     break
 
   elif num1 == 0:
-    print("Number is composite")
+    print("Number is composite Susan")
+    print("It is dividible by " + str(x))
+    break
+
+  else:
     x += 1
 
  
