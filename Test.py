@@ -42,22 +42,26 @@
 # print(k1.name)
 # k1.myfunc()
 
-number = int(input("Please type a number Aaron: "))
+#----------------------------------------------------------
+#-------------Prime Numbers Project------------------------
+
+number = int(input("Please type a number Callum: "))
 x = 2
 while True:
   num1 = (number%x)
- # print (num1)
+ # print (num1) used to debug initally
 
   if x == number:
-    print("Number is prime Aaron")
+    print("Number is prime Callum")
     break
 
   elif num1 == 0:
-    print("Number is composite Aaron")
+    print("Number is composite Callum")
     print("It is dividible by " + str(x))
     break
 
   else:
     x += 1
 
- 
+ #---------------------------------------------------------
+
