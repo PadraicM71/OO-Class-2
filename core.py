@@ -18,7 +18,7 @@ def calc(num_1,num_2):
     return result
 
 
-# def iterate(amount = 40):
-#     for number in tqdm(range(0,amount)):
-#         sleep(.5)
+def iterate(amount = 40):
+    for number in tqdm(range(0,amount)):
+        sleep(.5)
 

@@ -30,12 +30,12 @@ import math # Brings the whole math module in
 
 #create an application calling another python file where we have a certain function
 
-from core import calc as super_func#, iterate 
+from core import calc as super_func, iterate 
 
 
 print(super_func(10,15))
 
-#iterate()
+iterate()
 
 
 
